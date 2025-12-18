@@ -47,14 +47,14 @@
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3">
                             <span class="i-lucide-mail w-5 h-5 text-primary mt-0.5"></span>
-                            <a href="mailto:contact@munafio.com"
+                            <a :href="'mailto:' + personalInfo.email"
                                 class="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                                contact@gmail.com
+                                {{ personalInfo.email }}
                             </a>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="i-lucide-map-pin w-5 h-5 text-primary mt-0.5"></span>
-                            <span class="text-sm text-muted-foreground">Iraq</span>
+                            <span class="text-sm text-muted-foreground">{{ personalInfo.location }}</span>
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="i-lucide-clock w-5 h-5 text-primary mt-0.5"></span>
@@ -98,12 +98,7 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 import { personalInfo } from '~/data/portfolioData';
 
-const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/munafio', icon: 'i-lucide-github' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/munafio', icon: 'i-lucide-linkedin' },
-    { name: 'Instagram', url: 'https://instagram.com/munafio', icon: 'i-lucide-instagram' },
-    { name: 'YouTube', url: 'https://youtube.com/munafio', icon: 'i-lucide-youtube' },
-];
+const socialLinks = personalInfo.socialLinks;
 
 const quickLinks = [
     { label: 'Home', href: '/' },

@@ -22,7 +22,7 @@ export const portfolioData = {
     location: "Basra, Iraq",
     timezone: "Asia/Baghdad (UTC+3)",
     avatar: "/Profile-05.png",
-    email: "alaa.abdulhussein95@mail.com",
+    email: "alaa.alsaadi.dev@gmail.com",
     phone: "+9647716461687",
     availability: "Available for Freelance",
     bio: "Experienced IT Specialist with expertise in network management, system administration, and technical support. Skilled in troubleshooting, maintaining systems like SAP, Windows Server, CRM, Office 365, and IT infrastructure. Passionate about enhancing IT and software development operations through modern web development using HTML, CSS, JavaScript, Vue.js, and Laravel.",
@@ -30,7 +30,8 @@ export const portfolioData = {
     socialLinks: [
       { name: "GitHub", url: "https://github.com/alaa-alsaadi", icon: "i-lucide-github" },
       { name: "LinkedIn", url: "https://linkedin.com/in/alaa-abdulhuussein", icon: "i-lucide-linkedin" },
-      { name: "Email", url: "mailto:alaa.abdulhussein95@mail.com", icon: "i-lucide-mail" },
+      { name: "YouTube", url: "https://www.youtube.com/", icon: "i-lucide-youtube" },
+      { name: "Email", url: "mailto:alaa.alsaadi.dev@gmail.com", icon: "i-lucide-mail" },
     ],
   },
 
@@ -140,13 +141,12 @@ export const portfolioData = {
   skills: [
     // System Administration
     { name: "SAP", img: "https://cdn.simpleicons.org/sap/0FAAFF", proficiency: 85, yearsUsed: 1, category: "System Administration" },
-    { name: "Windows Server", img: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg", proficiency: 90, yearsUsed: 5, category: "System Administration" },
-    { name: "Linux", img: "https://cdn.simpleicons.org/linux/FCC624", proficiency: 80, yearsUsed: 4, category: "System Administration" },
-    { name: "Office 365", img: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg", proficiency: 95, yearsUsed: 6, category: "Productivity" },
+    { name: "Windows Server", img: "https://cdn.simpleicons.org/microsoftwindowsserver/227ED8", proficiency: 90, yearsUsed: 5, category: "System Administration" },
+    { name: "Office 365", img: "https://cdn.simpleicons.org/microsoftoffice/D83B01", proficiency: 95, yearsUsed: 6, category: "Productivity" },
 
     // Frontend Development
     { name: "HTML5", img: "https://cdn.simpleicons.org/html5/E34F26", proficiency: 95, yearsUsed: 6, category: "Frontend" },
-    { name: "CSS3", img: "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg", proficiency: 95, yearsUsed: 6, category: "Frontend" },
+    { name: "CSS3", img: "https://cdn.simpleicons.org/css3/1572B6", proficiency: 95, yearsUsed: 6, category: "Frontend" },
     { name: "JavaScript", img: "https://cdn.simpleicons.org/javascript/F7DF1E", proficiency: 90, yearsUsed: 6, category: "Frontend" },
     { name: "Vue.js", img: "https://cdn.simpleicons.org/vuedotjs/4FC08D", proficiency: 90, yearsUsed: 4, category: "Frontend" },
     { name: "Alpine.js", img: "https://cdn.simpleicons.org/alpinedotjs/8BC0D0", proficiency: 80, yearsUsed: 2, category: "Frontend" },
@@ -155,7 +155,6 @@ export const portfolioData = {
     { name: "PHP", img: "https://cdn.simpleicons.org/php/777BB4", proficiency: 90, yearsUsed: 6, category: "Backend" },
     { name: "Laravel", img: "https://cdn.simpleicons.org/laravel/FF2D20", proficiency: 88, yearsUsed: 5, category: "Backend" },
     { name: "MySQL", img: "https://cdn.simpleicons.org/mysql/4479A1", proficiency: 85, yearsUsed: 6, category: "Database" },
-    { name: "MongoDB", img: "https://cdn.simpleicons.org/mongodb/47A248", proficiency: 75, yearsUsed: 2, category: "Database" },
     { name: "SQLite", img: "https://cdn.simpleicons.org/sqlite/003B57", proficiency: 80, yearsUsed: 3, category: "Database" },
 
     // Mobile Development
@@ -168,8 +167,8 @@ export const portfolioData = {
 
     // Design Tools
     { name: "Figma", img: "https://cdn.simpleicons.org/figma/F24E1E", proficiency: 85, yearsUsed: 3, category: "Design" },
-    { name: "Adobe XD", img: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Adobe_XD_CC_icon.svg", proficiency: 80, yearsUsed: 3, category: "Design" },
-    { name: "Canva", img: "https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg", proficiency: 90, yearsUsed: 4, category: "Design" },
+    { name: "Adobe XD", img: "https://cdn.simpleicons.org/adobexd/FF61F6", proficiency: 80, yearsUsed: 3, category: "Design" },
+    { name: "Canva", img: "https://cdn.simpleicons.org/canva/00C4CC", proficiency: 90, yearsUsed: 4, category: "Design" },
   ],
 
   experience: [
@@ -260,24 +259,49 @@ export const portfolioData = {
         date: "2014 - 2018",
         verificationUrl: "",
         badge: "https://placehold.co/200x200/10b981/fff?text=BSc"
+      },
+      {
+        id: "comptia-a-plus",
+        title: "CompTIA A+ 1000 - Part 1",
+        issuer: "Alison / CompTIA",
+        date: "2020",
+        verificationUrl: "",
+        badge: "https://placehold.co/200x200/10b981/fff?text=A+"
+      },
+      {
+        id: "ieee-2019",
+        title: "IEEE Certificate of Recognition",
+        issuer: "IEEE Iraq Young Professionals",
+        date: "June 2019",
+        verificationUrl: "",
+        badge: "https://placehold.co/200x200/10b981/fff?text=IEEE"
+      },
+      {
+        id: "code-for-iraq-2018",
+        title: "IEEE Certificate of Recognition",
+        issuer: "Code for Iraq",
+        date: "October 2018",
+        verificationUrl: "",
+        badge: "https://placehold.co/200x200/10b981/fff?text=Code"
+      },
+      {
+        id: "mcsa",
+        title: "MCSA: Microsoft Certified Solutions Associate",
+        issuer: "Microsoft",
+        date: "2022",
+        verificationUrl: "",
+        badge: "https://placehold.co/200x200/10b981/fff?text=MCSA"
+      },
+      {
+        id: "ccna",
+        title: "CCNA: Cisco Certified Network Associate",
+        issuer: "Cisco",
+        date: "2024",
+        verificationUrl: "",
+        badge: "https://placehold.co/200x200/10b981/fff?text=CCNA"
       }
     ],
-    awards: [
-      {
-        id: "system-expert",
-        title: "System Administration Expert",
-        description: "Recognized for exceptional expertise in managing complex IT infrastructure",
-        date: "2024",
-        icon: "i-lucide-award"
-      },
-      {
-        id: "client-satisfaction",
-        title: "100% Client Satisfaction",
-        description: "Maintained perfect satisfaction rate across all freelance projects",
-        date: "2019-2024",
-        icon: "i-lucide-star"
-      },
-    ],
+    awards: [],
     publications: [],
     openSource: [],
   },

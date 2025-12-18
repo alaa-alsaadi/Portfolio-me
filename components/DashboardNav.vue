@@ -4,17 +4,21 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo Section - Left -->
                 <NuxtLink to="/" class="flex items-center gap-3 group">
-                    <!-- Logo Container -->
-                    <div
-                        class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-blue-600 shadow-lg shadow-primary/25 group-hover:shadow-primary/40 group-hover:scale-105 transition-all duration-300">
-                        <span class="text-white font-bold font-heading text-xl">A</span>
-                        <!-- Status Dot -->
-                        <div class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-background rounded-full flex items-center justify-center">
-                            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                        </div>
+                    <!-- Modern Logo -->
+                    <div class="relative flex items-center justify-center w-10 h-10 group-hover:scale-105 transition-all duration-300">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-primary">
+                            <path d="M20 5L33.8564 12.5V27.5L20 35L6.14359 27.5V12.5L20 5Z" fill="url(#logo_gradient)" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="logo_gradient" x1="20" y1="5" x2="20" y2="35" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="currentColor" stop-opacity="0.2"/>
+                                    <stop offset="100%" stop-color="currentColor" stop-opacity="0.05"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="absolute text-foreground font-bold font-heading text-lg tracking-wider">A</span>
                     </div>
                     <div class="hidden sm:block">
-                        <span class="font-bold text-base text-foreground">Alaa Abdulhussein</span>
+                        <span class="font-bold text-base text-foreground tracking-tight">Alaa Abdulhussein</span>
                     </div>
                 </NuxtLink>
 
@@ -45,9 +49,12 @@
 
                     <!-- Mobile Menu Toggle -->
                     <button @click="mobileMenuOpen = !mobileMenuOpen"
-                        class="md:hidden p-2.5 rounded-lg hover:bg-accent/10 transition-all" aria-label="Toggle menu">
-                        <span v-if="!mobileMenuOpen" class="i-lucide-menu w-5 h-5"></span>
-                        <span v-else class="i-lucide-x w-5 h-5"></span>
+                        class="md:hidden p-2.5 rounded-lg hover:bg-accent/10 transition-all group" aria-label="Toggle menu">
+                        <div class="w-6 h-5 relative flex flex-col justify-between overflow-hidden">
+                            <span class="w-full h-0.5 bg-foreground rounded-full transition-all duration-300 origin-left" :class="{ 'rotate-45 translate-x-1': mobileMenuOpen }"></span>
+                            <span class="w-3/4 h-0.5 bg-foreground rounded-full transition-all duration-300 ml-auto group-hover:w-full" :class="{ 'opacity-0 translate-x-full': mobileMenuOpen }"></span>
+                            <span class="w-full h-0.5 bg-foreground rounded-full transition-all duration-300 origin-left" :class="{ '-rotate-45 translate-x-1': mobileMenuOpen }"></span>
+                        </div>
                     </button>
                 </div>
             </div>

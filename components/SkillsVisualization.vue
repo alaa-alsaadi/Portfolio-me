@@ -4,18 +4,18 @@
       class="bg-gradient-to-t from-dark-1 to-dark-4 dark:from-[#9d9d9d] dark:to-white inline-block text-transparent bg-clip-text text-[2rem] text-xl mb-6">
       Knowledge
     </h2>
-    <div class="relative flex h-[100px] w-full flex-col items-center justify-center overflow-hidden">
-      <div class="group flex overflow-hidden p-2 [--gap:1rem] [gap:var(--gap)] flex-row [--duration:40s]">
+    <div class="relative flex h-[120px] w-full flex-col items-center justify-center overflow-hidden">
+      <div class="group flex overflow-hidden p-2 [--gap:2rem] [gap:var(--gap)] flex-row [--duration:40s]">
         <div class="flex shrink-0 justify-around [gap:var(--gap)] animate-marquee flex-row">
-          <img v-for="skill in skills" :key="skill.name" :alt="skill.name" :src="skill.img" width="70" height="70"
-            class="w-[40px] h-[40px] md:w-[70px] md:h-[70px] mx-4 grayscale transition-all duration-300 hover:grayscale-0 opacity-50 hover:opacity-100"
-            loading="lazy" decoding="async" style="color: transparent" />
+          <NuxtImg v-for="skill in skills" :key="skill.name" :alt="skill.name" :src="skill.img" width="80" height="80"
+            class="w-[50px] h-[50px] md:w-[80px] md:h-[80px] mx-8 grayscale-[0.5] hover:grayscale-0 opacity-80 hover:opacity-100 transition-all duration-300 transform hover:scale-110 cursor-pointer"
+            loading="lazy" />
         </div>
         <div class="flex shrink-0 justify-around [gap:var(--gap)] animate-marquee flex-row" aria-hidden="true">
-          <img v-for="skill in skills" :key="'dup-' + skill.name" :alt="skill.name" :src="skill.img" width="70"
-            height="70"
-            class="w-[40px] h-[40px] md:w-[70px] md:h-[70px] mx-4 grayscale transition-all duration-300 hover:grayscale-0 opacity-50 hover:opacity-100"
-            loading="lazy" decoding="async" style="color: transparent" />
+          <NuxtImg v-for="skill in skills" :key="'dup-' + skill.name" :alt="skill.name" :src="skill.img" width="80"
+            height="80"
+            class="w-[50px] h-[50px] md:w-[80px] md:h-[80px] mx-8 grayscale-[0.5] hover:grayscale-0 opacity-80 hover:opacity-100 transition-all duration-300 transform hover:scale-110 cursor-pointer"
+            loading="lazy" />
         </div>
       </div>
     </div>

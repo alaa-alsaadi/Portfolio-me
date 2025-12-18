@@ -1,7 +1,6 @@
 <template>
     <section id="achievements" class="container mx-auto py-16 px-4 md:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-foreground mb-4 text-center animate-slide-up">Achievements & Certifications
-        </h2>
+        <h2 class="text-4xl font-bold text-foreground mb-4 text-center animate-slide-up">Certifications & Honors</h2>
         <p class="text-lg text-secondary-foreground mb-12 text-center max-w-2xl mx-auto">
             Highlights of my professional growth and recognized expertise.
         </p>
