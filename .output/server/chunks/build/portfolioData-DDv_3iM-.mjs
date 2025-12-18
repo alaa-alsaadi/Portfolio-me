@@ -1,0 +1,457 @@
+const portfolioData = {
+  personalInfo: {
+    name: "Alaa Abdulhussein",
+    title: "IT Specialist & Full Stack Developer",
+    specialization: "System Administration & Web Development",
+    location: "Basra, Iraq",
+    timezone: "Asia/Baghdad (UTC+3)",
+    avatar: "/Profile-05.png",
+    email: "alaa.abdulhussein95@mail.com",
+    phone: "+9647716461687",
+    availability: "Available for Freelance",
+    bio: "Experienced IT Specialist with expertise in network management, system administration, and technical support. Skilled in troubleshooting, maintaining systems like SAP, Windows Server, CRM, Office 365, and IT infrastructure. Passionate about enhancing IT and software development operations through modern web development using HTML, CSS, JavaScript, Vue.js, and Laravel.",
+    cvDownloadLink: "/cv/alaa-abdulhussein-cv.pdf",
+    socialLinks: [
+      { name: "GitHub", url: "https://github.com/alaa-abdulhussein", icon: "i-lucide-github" },
+      { name: "LinkedIn", url: "https://linkedin.com/in/alaa-abdulhuussein", icon: "i-lucide-linkedin" },
+      { name: "Email", url: "mailto:alaa.abdulhussein95@mail.com", icon: "i-lucide-mail" }
+    ]
+  },
+  metrics: {
+    yearsExperience: 6,
+    completedProjects: 23,
+    clientCollaborations: 15,
+    githubStars: 2500,
+    coreTechnologies: ["PHP", "Laravel", "Vue.js", "MySQL", "JavaScript", "Python", "Flutter", "SAP", "Windows Server", "Linux", "MongoDB", "Alpine.js", "Ionic"],
+    projectCompletionRate: 95,
+    activeDevelopmentHours: 2e3
+  },
+  projects: [
+    {
+      id: "salis-dashboard",
+      title: "Salis Dashboard",
+      description: "Comprehensive management dashboard for Salis platform. Manage, automate, and optimize your complexes with powerful analytics and seamless workflows.",
+      thumbnail: "https://picsum.photos/seed/salis-dash/800/600",
+      status: "completed",
+      techStack: ["Vue.js", "Laravel", "MySQL", "Chart.js"],
+      demoLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2023-03",
+      endDate: "2023-07",
+      featured: true
+    },
+    {
+      id: "mohammed-alhaddad",
+      title: "Mohammed Alhaddad Website",
+      description: "Personal website for Mohammed Alhaddad, a professional content creator and social media influencer.",
+      thumbnail: "https://picsum.photos/seed/mohammed/800/600",
+      status: "completed",
+      techStack: ["Next.js", "Tailwind CSS", "React"],
+      demoLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2022-09",
+      endDate: "2022-11",
+      featured: true
+    },
+    {
+      id: "apiminer",
+      title: "APIMiner",
+      description: "Tool to automatically extract API calls from frontend JavaScript/TypeScript and generate Postman collections.",
+      thumbnail: "https://picsum.photos/seed/apiminer/800/600",
+      status: "completed",
+      techStack: ["Node.js", "TypeScript", "JavaScript"],
+      demoLink: null,
+      githubLink: "https://github.com",
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2023-08",
+      endDate: "2023-10",
+      featured: false
+    },
+    {
+      id: "digigood",
+      title: "DigiGood",
+      description: "A digital assets store with user dashboard and payment integration using Paddle. User can buy and download digital assets from their accounts. SEO optimized and fully responsive on all devices.",
+      thumbnail: "https://picsum.photos/seed/digigood/800/600",
+      status: "completed",
+      techStack: ["Laravel", "Vue.js", "Paddle", "MySQL"],
+      demoLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2022-06",
+      endDate: "2022-12",
+      featured: false
+    },
+    {
+      id: "rsgcore",
+      title: "RSGCore",
+      description: "RSG Core is a cutting-edge, community-driven framework for RedM. Built for performance, flexibility, and ease of use to create immersive Wild West experiences.",
+      thumbnail: "https://picsum.photos/seed/rsgcore/800/600",
+      status: "active",
+      techStack: ["Lua", "JavaScript", "Redis", "MySQL"],
+      demoLink: null,
+      githubLink: "https://github.com",
+      caseStudyLink: null,
+      completionPercentage: 85,
+      startDate: "2023-01",
+      endDate: null,
+      featured: true
+    },
+    {
+      id: "redm-dev-hub",
+      title: "RedM Dev Hub",
+      description: "From custom scripts to server optimization. Your trusted companion for RedM development and creating immersive Wild West experiences. A blog for RedM/FiveM.",
+      thumbnail: "https://picsum.photos/seed/redmhub/800/600",
+      status: "completed",
+      techStack: ["Next.js", "MDX", "Tailwind CSS"],
+      demoLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2023-04",
+      endDate: "2023-06",
+      featured: false
+    },
+    {
+      id: "bln-studio",
+      title: "BLN Studio",
+      description: "Your go-to destination for high-quality scripts. Established with the goal of enhancing gameplay, offering unique, highly customizable scripts that cater to all types of servers.",
+      thumbnail: "https://picsum.photos/seed/blnstudio/800/600",
+      status: "active",
+      techStack: ["Lua", "JavaScript", "FiveM"],
+      demoLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      completionPercentage: 90,
+      startDate: "2022-11",
+      endDate: null,
+      featured: false
+    },
+    {
+      id: "smartbox",
+      title: "SmartBox",
+      description: "A lightweight streaming platform optimized for smart TVs, delivering movies, series, anime, and TV shows with enhanced performance for older browsers and TV interfaces.",
+      thumbnail: "https://picsum.photos/seed/smartbox/800/600",
+      status: "completed",
+      techStack: ["Vue.js", "Laravel", "Video Streaming", "CDN"],
+      demoLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2021-08",
+      endDate: "2022-02",
+      featured: true
+    },
+    {
+      id: "unified-dashboard",
+      title: "Unified Dashboard",
+      description: "A unified dashboard for all Albox services (Cinema, Smart, share, sound, etc), can manage everything easily, all in one place.",
+      thumbnail: "https://picsum.photos/seed/unified/800/600",
+      status: "completed",
+      techStack: ["Vue.js", "Nuxt.js", "Laravel", "MySQL"],
+      demoLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2022-01",
+      endDate: "2022-05",
+      featured: false
+    },
+    {
+      id: "candyiraq",
+      title: "Candyiraq",
+      description: "An Iraqi e-commerce app for cosmetics with dynamic home layout and full e-commerce features.",
+      thumbnail: "https://picsum.photos/seed/candy/800/600",
+      status: "completed",
+      techStack: ["Flutter", "Laravel", "MySQL", "Payment Gateway"],
+      demoLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2021-06",
+      endDate: "2021-11",
+      featured: false
+    },
+    {
+      id: "portfolio-v1",
+      title: "Portfolio v1",
+      description: "Previous portfolio website built with Next.js, Medium API, and TailwindCSS.",
+      thumbnail: "https://picsum.photos/seed/portfolio/800/600",
+      status: "completed",
+      techStack: ["Next.js", "Tailwind CSS", "Medium API"],
+      demoLink: null,
+      githubLink: "https://github.com",
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2022-08",
+      endDate: "2022-09",
+      featured: false
+    },
+    {
+      id: "seeen",
+      title: "Seeen",
+      description: "An Iraqi app for patients to book appointments with doctors.",
+      thumbnail: "https://picsum.photos/seed/seeen/800/600",
+      status: "completed",
+      techStack: ["Flutter", "Laravel", "MySQL", "Firebase"],
+      demoLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2020-09",
+      endDate: "2021-02",
+      featured: false
+    },
+    {
+      id: "covid-care",
+      title: "Covid-19 Care",
+      description: "An app for COVID-19 prediction, hospital stats, and tracking map.",
+      thumbnail: "https://picsum.photos/seed/covid/800/600",
+      status: "completed",
+      techStack: ["Flutter", "Firebase", "Maps API", "Charts"],
+      demoLink: null,
+      githubLink: "https://github.com",
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2020-04",
+      endDate: "2020-08",
+      featured: false
+    },
+    {
+      id: "thestation",
+      title: "TheStation",
+      description: "Management app for 'TheStation' in Iraq, handling appointments, events, bookings, and articles.",
+      thumbnail: "https://picsum.photos/seed/station/800/600",
+      status: "completed",
+      techStack: ["Laravel", "Vue.js", "MySQL"],
+      demoLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2021-01",
+      endDate: "2021-05",
+      featured: false
+    },
+    {
+      id: "zuqaq13",
+      title: "Zuqaq13",
+      description: "Dashboard for an Iraqi clothing brand to manage stock and products.",
+      thumbnail: "https://picsum.photos/seed/zuqaq/800/600",
+      status: "completed",
+      techStack: ["Laravel", "Vue.js", "MySQL"],
+      demoLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2020-11",
+      endDate: "2021-01",
+      featured: false
+    },
+    {
+      id: "chatify",
+      title: "Chatify",
+      description: "Laravel's #1 one-to-one chatting system package, helps you add a complete real-time chatting system to your new/existing Laravel application with only one command.",
+      thumbnail: "https://picsum.photos/seed/chatify/800/600",
+      status: "active",
+      techStack: ["Laravel", "Pusher", "Vue.js", "WebSocket"],
+      demoLink: null,
+      githubLink: "https://github.com",
+      caseStudyLink: null,
+      completionPercentage: 95,
+      startDate: "2019-06",
+      endDate: null,
+      featured: true
+    },
+    {
+      id: "intagiraqi",
+      title: "Intagiraqi",
+      description: "A platform for Iraqi products to support local businesses/products and connect job seekers. Built with Laravel backend and Vue.js frontend.",
+      thumbnail: "https://picsum.photos/seed/intag/800/600",
+      status: "completed",
+      techStack: ["Laravel", "Vue.js", "MySQL", "Tailwind CSS"],
+      demoLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2020-06",
+      endDate: "2020-12",
+      featured: false
+    },
+    {
+      id: "cubetalk",
+      title: "Cubetalk",
+      description: "Open-source web application for anonymous feedback, similar to Sarahah/Sayat.",
+      thumbnail: "https://picsum.photos/seed/cubetalk/800/600",
+      status: "completed",
+      techStack: ["PHP", "Laravel", "MySQL"],
+      demoLink: null,
+      githubLink: "https://github.com",
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2019-08",
+      endDate: "2019-11",
+      featured: false
+    },
+    {
+      id: "wallstant",
+      title: "Wallstant",
+      description: "An open-source social network PHP app with various social features.",
+      thumbnail: "https://picsum.photos/seed/wallstant/800/600",
+      status: "completed",
+      techStack: ["PHP", "MySQL", "JavaScript"],
+      demoLink: null,
+      githubLink: "https://github.com",
+      caseStudyLink: null,
+      completionPercentage: 100,
+      startDate: "2019-03",
+      endDate: "2019-07",
+      featured: false
+    }
+  ],
+  skills: [
+    // System Administration
+    { name: "SAP", img: "https://cdn.simpleicons.org/sap/0FAAFF", proficiency: 85, yearsUsed: 1, category: "System Administration" },
+    { name: "Windows Server", img: "https://cdn.simpleicons.org/windows/0078D6", proficiency: 90, yearsUsed: 5, category: "System Administration" },
+    { name: "Linux", img: "https://cdn.simpleicons.org/linux/FCC624", proficiency: 80, yearsUsed: 4, category: "System Administration" },
+    { name: "Office 365", img: "https://cdn.simpleicons.org/microsoft/D83B01", proficiency: 95, yearsUsed: 6, category: "Productivity" },
+    // Frontend Development
+    { name: "HTML5", img: "https://cdn.simpleicons.org/html5/E34F26", proficiency: 95, yearsUsed: 6, category: "Frontend" },
+    { name: "CSS3", img: "https://cdn.simpleicons.org/css3/1572B6", proficiency: 95, yearsUsed: 6, category: "Frontend" },
+    { name: "JavaScript", img: "https://cdn.simpleicons.org/javascript/F7DF1E", proficiency: 90, yearsUsed: 6, category: "Frontend" },
+    { name: "Vue.js", img: "https://cdn.simpleicons.org/vuedotjs/4FC08D", proficiency: 90, yearsUsed: 4, category: "Frontend" },
+    { name: "Alpine.js", img: "https://cdn.simpleicons.org/alpinedotjs/8BC0D0", proficiency: 80, yearsUsed: 2, category: "Frontend" },
+    // Backend Development
+    { name: "PHP", img: "https://cdn.simpleicons.org/php/777BB4", proficiency: 90, yearsUsed: 6, category: "Backend" },
+    { name: "Laravel", img: "https://cdn.simpleicons.org/laravel/FF2D20", proficiency: 88, yearsUsed: 5, category: "Backend" },
+    { name: "MySQL", img: "https://cdn.simpleicons.org/mysql/4479A1", proficiency: 85, yearsUsed: 6, category: "Database" },
+    { name: "MongoDB", img: "https://cdn.simpleicons.org/mongodb/47A248", proficiency: 75, yearsUsed: 2, category: "Database" },
+    { name: "SQLite", img: "https://cdn.simpleicons.org/sqlite/003B57", proficiency: 80, yearsUsed: 3, category: "Database" },
+    // Mobile Development
+    { name: "Flutter", img: "https://cdn.simpleicons.org/flutter/02569B", proficiency: 75, yearsUsed: 2, category: "Mobile" },
+    { name: "Ionic", img: "https://cdn.simpleicons.org/ionic/3880FF", proficiency: 70, yearsUsed: 2, category: "Mobile" },
+    // Programming Languages
+    { name: "Python", img: "https://cdn.simpleicons.org/python/3776AB", proficiency: 70, yearsUsed: 3, category: "Programming" },
+    { name: "C++", img: "https://cdn.simpleicons.org/cplusplus/00599C", proficiency: 65, yearsUsed: 2, category: "Programming" },
+    // Design Tools
+    { name: "Figma", img: "https://cdn.simpleicons.org/figma/F24E1E", proficiency: 85, yearsUsed: 3, category: "Design" },
+    { name: "Adobe XD", img: "https://cdn.simpleicons.org/adobexd/FF61F6", proficiency: 80, yearsUsed: 3, category: "Design" },
+    { name: "Canva", img: "https://cdn.simpleicons.org/canva/00C4CC", proficiency: 90, yearsUsed: 4, category: "Design" }
+  ],
+  experience: [
+    {
+      id: "numerus-it",
+      role: "IT Specialist",
+      company: "Numerus Group",
+      companyLogo: "https://ui-avatars.com/api/?name=Numerus+Group&size=80&background=10b981&color=fff",
+      period: "August 2024 - Present",
+      location: "Basra, Iraq",
+      description: [
+        "Oversee management and troubleshooting of computer systems, printers, and CCTV infrastructure",
+        "Utilize SAP and CRM systems for business processes and data management",
+        "Administer Windows Server and manage network security"
+      ],
+      achievements: [
+        "Improved system uptime by implementing proactive maintenance protocols",
+        "Enhanced security measures protecting sensitive company data",
+        "Streamlined helpdesk operations reducing average resolution time by 30%"
+      ],
+      technologies: ["SAP", "Windows Server", "CRM", "Office 365", "Network Security", "CCTV Systems"]
+    },
+    {
+      id: "fateh-data",
+      role: "Data Entry Specialist",
+      company: "Fateh Al-Barri Co.",
+      companyLogo: "https://ui-avatars.com/api/?name=Fateh+Co&size=80&background=10b981&color=fff",
+      period: "May 2021 - 2024",
+      location: "Basra, Iraq",
+      description: [
+        "Managed data entry tasks ensuring accuracy and timely data transmission",
+        "Conducted error checks and prepared comprehensive reports",
+        "Contributed to improved data integrity across operations"
+      ],
+      achievements: [
+        "Achieved 99.8% data accuracy rate",
+        "Reduced processing time by 40% through process optimization",
+        "Developed automated verification systems using Excel and Python"
+      ],
+      technologies: ["Excel", "Python", "Data Analysis", "Quality Control"]
+    },
+    {
+      id: "fb-it",
+      role: "IT Specialist & Help Desk",
+      company: "F.B CO.",
+      companyLogo: "https://ui-avatars.com/api/?name=FB+CO&size=80&background=10b981&color=fff",
+      period: "2019 - 2021",
+      location: "Basra, Iraq",
+      description: [
+        "Administered network systems and implemented security protocols",
+        "Resolved hardware and software issues for improved operational efficiency",
+        "Provided comprehensive helpdesk support to end users"
+      ],
+      achievements: [
+        "Implemented network security measures reducing security incidents by 60%",
+        "Improved system performance through regular maintenance and updates",
+        "Maintained 95% user satisfaction rating in helpdesk services"
+      ],
+      technologies: ["Network Administration", "Windows Server", "Hardware Support", "Security Protocols"]
+    },
+    {
+      id: "freelance-dev",
+      role: "Freelance Web Developer & Designer",
+      company: "Freelancer",
+      companyLogo: "https://ui-avatars.com/api/?name=Freelance&size=80&background=10b981&color=fff",
+      period: "2019 - Present",
+      location: "Remote",
+      description: [
+        "Design and develop websites and mobile applications using modern technologies",
+        "Build robust backend solutions with PHP, Laravel, and MySQL",
+        "Create responsive and user-friendly interfaces"
+      ],
+      achievements: [
+        "Completed 23+ web development projects successfully",
+        "Maintained 100% client satisfaction rate",
+        "Developed applications serving 100,000+ users"
+      ],
+      technologies: ["HTML", "CSS", "JavaScript", "Vue.js", "PHP", "Laravel", "MySQL", "Flutter", "Ionic"]
+    }
+  ],
+  achievements: {
+    certifications: [
+      {
+        id: "computer-science",
+        title: "Bachelor of Computer Science",
+        issuer: "Shatt Al-Arab University College",
+        date: "2014 - 2018",
+        verificationUrl: "#",
+        badge: "https://placehold.co/200x200/10b981/fff?text=BSc"
+      }
+    ],
+    awards: [
+      {
+        id: "system-expert",
+        title: "System Administration Expert",
+        description: "Recognized for exceptional expertise in managing complex IT infrastructure",
+        date: "2024",
+        icon: "i-lucide-award"
+      },
+      {
+        id: "client-satisfaction",
+        title: "100% Client Satisfaction",
+        description: "Maintained perfect satisfaction rate across all freelance projects",
+        date: "2019-2024",
+        icon: "i-lucide-star"
+      }
+    ],
+    publications: [],
+    openSource: []
+  }
+};
+const { personalInfo, metrics, projects, skills, experience, achievements } = portfolioData;
+
+export { projects as a, achievements as b, experience as e, metrics as m, personalInfo as p, skills as s };
+//# sourceMappingURL=portfolioData-DDv_3iM-.mjs.map
