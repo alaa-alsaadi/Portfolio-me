@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     }
   },
   site: {
-    url: 'https://your-portfolio-url.com', // Update this with your actual URL
+    url: 'https://alaa-abd.vercel.app',
     name: 'Alaa Abdulhussein - Portfolio',
     description: 'Full Stack Developer & IT Specialist',
     defaultLocale: 'en',
