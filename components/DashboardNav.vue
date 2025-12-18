@@ -4,11 +4,14 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo Section - Left -->
                 <NuxtLink to="/" class="flex items-center gap-3 group">
-                    <div class="relative">
-                        <img src="/avatar.jpg" alt="Alaa Abdulhussein"
-                            class="w-10 h-10 rounded-full ring-2 ring-primary/30 group-hover:ring-primary transition-all" />
-                        <span
-                            class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-primary border-2 border-background rounded-full"></span>
+                    <!-- Logo Container -->
+                    <div
+                        class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-blue-600 shadow-lg shadow-primary/25 group-hover:shadow-primary/40 group-hover:scale-105 transition-all duration-300">
+                        <span class="text-white font-bold font-heading text-xl">A</span>
+                        <!-- Status Dot -->
+                        <div class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-background rounded-full flex items-center justify-center">
+                            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                        </div>
                     </div>
                     <div class="hidden sm:block">
                         <span class="font-bold text-base text-foreground">Alaa Abdulhussein</span>
@@ -83,9 +86,10 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
+import { personalInfo } from '~/data/portfolioData';
 
 const navItems = [
-    { label: 'Home', href: '/#', icon: 'i-lucide-home' },
+    { label: 'Home', href: '/', icon: 'i-lucide-home' },
     { label: 'Projects', href: '#projects', icon: 'i-lucide-briefcase' },
     { label: 'Skills', href: '#skills', icon: 'i-lucide-code-2' },
     { label: 'Experience', href: '#experience', icon: 'i-lucide-trophy' },

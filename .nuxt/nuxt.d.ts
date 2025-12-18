@@ -1,4 +1,7 @@
+/// <reference types="@nuxt/fonts" />
 /// <reference types="@nuxtjs/tailwindcss" />
+/// <reference types="@nuxtjs/seo" />
+/// <reference types="@nuxt/image" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference path="types/builder-env.d.ts" />
@@ -8,7 +11,8 @@
 /// <reference path="types/build.d.ts" />
 /// <reference path="types/schema.d.ts" />
 /// <reference path="types/app.config.d.ts" />
-/// <reference types="D:/FrontendDevelopment/PortFolio Platform/node_modules/@nuxt/nitro-server/dist/index.mjs" />
+/// <reference types="D:/Portfolio-me/node_modules/@nuxt/nitro-server/dist/index.mjs" />
+/// <reference path="image/providers.d.ts" />
 /// <reference types="vue-router" />
 /// <reference path="types/middleware.d.ts" />
 /// <reference path="types/nitro-middleware.d.ts" />
@@ -17,6 +21,13 @@
 /// <reference path="imports.d.ts" />
 /// <reference path="types/imports.d.ts" />
 /// <reference path="schema/nuxt.schema.d.ts" />
+/// <reference path="module/nuxt-site-config.d.ts" />
+/// <reference path="module/nuxt-robots.d.ts" />
+/// <reference path="module/nuxt-sitemap.d.ts" />
+/// <reference path="module/nuxt-og-image.d.ts" />
+/// <reference path="module/nuxt-schema-org.d.ts" />
+/// <reference path="module/nuxt-seo-utils.assets.d.ts" />
+/// <reference path="module/nuxt-seo-utils.d.ts" />
 /// <reference path="types/nitro.d.ts" />
 
 export {}

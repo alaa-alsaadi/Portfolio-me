@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { iconsPlugin, getIconCollections } from '@egoist/tailwindcss-icons'
 
 export default {
   darkMode: ['class'],
@@ -86,6 +87,10 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    iconsPlugin({
+      collections: getIconCollections(['lucide']),
+    }),
+  ],
 } satisfies Config
 

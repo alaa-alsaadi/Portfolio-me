@@ -38,8 +38,9 @@
                     <!-- Avatar & Availability Badge -->
                     <div class="flex flex-col lg:flex-row items-center lg:items-start gap-6">
                         <div class="relative">
-                            <img :src="personalInfo.avatar" :alt="personalInfo.name"
-                                class="w-32 h-32 rounded-full ring-4 ring-primary/20 shadow-xl" />
+                            <NuxtImg :src="personalInfo.avatar" :alt="personalInfo.name"
+                                width="128" height="128" format="webp" loading="eager"
+                                class="w-32 h-32 rounded-full object-cover ring-4 ring-primary/20 shadow-xl" />
                             <!-- Availability Badge -->
                             <div
                                 class="absolute -bottom-2 -right-2 px-3 py-1 bg-green-500 dark:bg-green-600 text-white text-xs font-medium rounded-full shadow-lg flex items-center gap-1.5 animate-pulse-slow">

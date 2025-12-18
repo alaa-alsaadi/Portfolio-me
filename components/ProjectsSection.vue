@@ -23,7 +23,7 @@
           </span>
         </div>
 
-        <img :src="project.thumbnail" :alt="project.title"
+        <NuxtImg :src="project.thumbnail" :alt="project.title" format="webp" loading="lazy" height="300"
           class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
         <div class="p-6 flex flex-col flex-grow">
           <h3 class="text-xl font-bold text-foreground mb-2">

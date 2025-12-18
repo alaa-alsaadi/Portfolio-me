@@ -46,19 +46,12 @@ import SkillsVisualization from '~/components/SkillsVisualization.vue';
 import { personalInfo, metrics, projects, skills, experience, achievements } from '~/data/portfolioData';
 
 // Set page metadata
-useHead({
+useSeoMeta({
   title: 'Alaa Abdulhussein - Full Stack Developer',
-  meta: [
-    {
-      name: 'description',
-      content: 'A passionate full-stack software developer and UI/UX designer based in Iraq with 8+ years of experience in building amazing digital experiences.'
-    },
-    { property: 'og:title', content: 'Alaa Abdulhussein - Portfolio' },
-    { property: 'og:description', content: 'Full Stack Developer & UI/UX Designer' },
-    { property: 'og:type', content: 'website' },
-  ],
-  htmlAttrs: {
-    lang: 'en'
-  }
+  ogTitle: 'Alaa Abdulhussein - Portfolio',
+  description: 'A passionate full-stack software developer and UI/UX designer based in Iraq with 8+ years of experience in building amazing digital experiences.',
+  ogDescription: 'Full Stack Developer & UI/UX Designer',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
 });
 </script>

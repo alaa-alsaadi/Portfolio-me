@@ -6,8 +6,8 @@
                 <!-- About Section -->
                 <div class="md:col-span-2">
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="https://ui-avatars.com/api/?name=Alaa+Abdulhussein&size=200&background=fbbf24&color=fff&bold=true"
-                            alt="Alaa Abdulhussein" class="w-12 h-12 rounded-full" />
+                        <NuxtImg :src="personalInfo.avatar" alt="Alaa Abdulhussein" width="48" height="48" format="webp"
+                            class="w-12 h-12 rounded-full object-cover" />
                         <div>
                             <h3 class="font-bold text-lg">Alaa Abdulhussein</h3>
                             <p class="text-sm text-muted-foreground">Full Stack Developer</p>
@@ -49,7 +49,7 @@
                             <span class="i-lucide-mail w-5 h-5 text-primary mt-0.5"></span>
                             <a href="mailto:contact@munafio.com"
                                 class="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                                contact@munafio.com
+                                contact@gmail.com
                             </a>
                         </li>
                         <li class="flex items-start gap-3">
@@ -96,6 +96,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue';
+import { personalInfo } from '~/data/portfolioData';
 
 const socialLinks = [
     { name: 'GitHub', url: 'https://github.com/munafio', icon: 'i-lucide-github' },
